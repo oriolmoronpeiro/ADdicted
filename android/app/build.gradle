@@ -65,6 +65,3 @@ dependencies {
 }
 
 def flutterProjectRoot = rootProject.projectDir.parentFile.toPath()
-
-// ADD THIS AT THE BOTTOM
-apply plugin: 'com.google.gms.google-services'
