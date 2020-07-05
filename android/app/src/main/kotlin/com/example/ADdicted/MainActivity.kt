@@ -1,4 +1,4 @@
-package com.example.ADdicted
+package com.addicted.addicted
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "601373350550",
+    "firebase_url": "https://addicted-d89ba.firebaseio.com",
+    "project_id": "addicted-d89ba",
+    "storage_bucket": "addicted-d89ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601373350550:android:46bfa3f536619fb7cd00b7",
+        "android_client_info": {
+          "package_name": "com.addicted.addicted"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601373350550-rdflitn8evn0ojovts3hmk4uhas9ss1r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.addicted.addicted",
+            "certificate_hash": "3030ee0f7ea10028780090fe132dd233302852b6"
+          }
+        },
+        {
+          "client_id": "601373350550-iuidj4nbn0nvtvhun41tcjnj7q06hrig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUpEFttRBVVcotYVP8z2DvuGClOzEFidk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601373350550-iuidj4nbn0nvtvhun41tcjnj7q06hrig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
