@@ -19,13 +19,13 @@ class FirstScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
-              /*CircleAvatar(
+              CircleAvatar(
                 backgroundImage: NetworkImage(
                   imageUrl,
                 ),
                 radius: 60,
                 backgroundColor: Colors.transparent,
-              ),*/
+              ),
               SizedBox(height: 40),
               Text(
                 'NAME',
@@ -34,13 +34,13 @@ class FirstScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: Colors.black54),
               ),
-              /*Text(
+              Text(
                 name,
                 style: TextStyle(
                     fontSize: 25,
                     color: Colors.deepPurple,
                     fontWeight: FontWeight.bold),
-              ),*/
+              ),
               SizedBox(height: 20),
               Text(
                 'EMAIL',
@@ -49,13 +49,13 @@ class FirstScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: Colors.black54),
               ),
-              /*Text(
+              Text(
                 email,
                 style: TextStyle(
                     fontSize: 25,
                     color: Colors.deepPurple,
                     fontWeight: FontWeight.bold),
-              ),*/
+              ),
               SizedBox(height: 40),
               RaisedButton(
                 onPressed: () {
