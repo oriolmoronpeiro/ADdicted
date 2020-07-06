@@ -1,7 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/services.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:play_games/play_games.dart';
 
 final FirebaseAuth _auth = FirebaseAuth.instance;
 final GoogleSignIn googleSignIn = GoogleSignIn();
@@ -44,19 +42,6 @@ Future<String> signInWithGoogle() async {
   assert(user.uid == currentUser.uid);
 
   return 'signInWithGoogle succeeded: $user';
-}
-
-// Platform messages are asynchronous, so we initialize in an async method.
-Future<void> signInPlayGames() async {
-  final SigninResult signResult = await PlayGames.signIn();
-
-  name = signResult.account.displayName;
-  email = signResult.account.email;
-  imageUrl = signResult.account.iconImageUri;
-}
-
-void signOutPlayGames() async {
-  await PlayGames.signOut();
 }
 
 void signOutGoogle() async {

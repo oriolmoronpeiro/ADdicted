@@ -20,9 +20,7 @@ class _LoginPageState extends State<LoginPage> {
             children: <Widget>[
               FlutterLogo(size: 150),
               SizedBox(height: 50),
-              _signInButton("Google"),
-              SizedBox(height: 50),
-              _signInButton("PlayGames"),
+              _signInButton(),
             ],
           ),
         ),
@@ -30,31 +28,19 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  Widget _signInButton(String type) {
+  Widget _signInButton() {
     return OutlineButton(
       splashColor: Colors.grey,
       onPressed: () {
-        type == "Google"
-            ? (signInWithGoogle().whenComplete(() {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return FirstScreen();
-                    },
-                  ),
-                );
-              }))
-            : type == "PlayGames"
-                ? signInPlayGames().whenComplete(() => {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) {
-                            return FirstScreen();
-                          },
-                        ),
-                      ),
-                    })
-                : null;
+        signInWithGoogle().whenComplete(() {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) {
+                return FirstScreen();
+              },
+            ),
+          );
+        });
       },
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
       highlightElevation: 0,
@@ -65,13 +51,7 @@ class _LoginPageState extends State<LoginPage> {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            (type == "Google")
-                ? Image(
-                    image: AssetImage("assets/google_logo.png"), height: 35.0)
-                : type == "PlayGames"
-                    ? Image(
-                        image: AssetImage("assets/playgames.jpg"), height: 35.0)
-                    : null,
+            Image(image: AssetImage("assets/google_logo.png"), height: 35.0),
             Padding(
               padding: const EdgeInsets.only(left: 10),
               child: Text(
